@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "the-box-head-guy",
-  "license": "MIT License"
+  "license": "MIT License",
+  "dependencies": {
+    "browser-image-compression": "^2.0.2",
+    "normalize.css": "8.0.1"
+  }
 }
