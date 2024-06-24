@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="/app/style/app.css">
+
+  <!-- Scripts -->
+  <script type="module" src="/app/components/app.js" defer></script>
+
+  <!-- Logo -->
+  <link rel="icon" href="./assets/svg/image-compression-logo.svg" type="image/x-icon">
+
+  <title>Image Compressor</title>
+</head>
+
+<body>
+  <main id="app" class="app">
+    <!-- Header -->
+    <header>
+      <h1 class="app__title">Image Compressor</h1>
+    </header>
+
+    <!-- app -->
+    <div class="app__content">
+
+      <!-- form -->
+      <form class="app__form">
+        <input id="file-input" class="app__input" type="file" accept="image/*" required>
+        <button class="app__button">Compress</button>
+      </form>
+
+      <!-- output -->
+      <div id="app-output" class="app__output">
+        
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
