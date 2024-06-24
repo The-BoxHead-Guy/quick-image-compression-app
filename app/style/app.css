@@ -1,0 +1,49 @@
+/* Imports */
+@import "/node_modules/normalize.css/normalize.css";
+@import "header.css";
+@import "base.css";
+
+/* Fonts Imports */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  /* Triad System Colors Template */
+  --bg-color: #292927;
+  --bg-color-2: #282628;
+  --bg-color-3: #373939;
+  --pink: #ff59d7;
+  --pink-neon: #f0a1ff;
+  --blue: #59fffc;
+  --yellow: #dac870;
+
+  /* Basic Colors */
+  --white: #f5f5f5;
+  --black: #050505;
+  --gray: #7f7f7f;
+  --gray-light: #bfbfbf;
+  --gray-dark: #1c1b1b;
+
+  /* Fonts */
+  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+}
+
+/* Base Config */
+
+.app {
+  background: linear-gradient(
+    190deg,
+    var(--bg-color),
+    var(--bg-color-2),
+    var(--bg-color-3)
+  );
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}

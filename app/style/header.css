@@ -1,0 +1,13 @@
+header {
+  background-color: transparent;
+  position: absolute;
+  top: 2rem;
+}
+
+.app__title {
+  color: var(--white);
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
