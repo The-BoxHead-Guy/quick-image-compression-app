@@ -7,6 +7,7 @@ const appOuputContainer = document.getElementById("app-output");
 /* Image Handlers */
 const imgContainer = document.querySelector(".app__img-container");
 const imgPreview = document.querySelector(".app__img-preview");
+const imgCaption = document.querySelector(".app__img-name");
 
 addEventListener("DOMContentLoaded", () => {
   input.addEventListener("change", (event) => {
@@ -20,6 +21,7 @@ addEventListener("DOMContentLoaded", () => {
       imgPreview.src = imgFile;
 
       imgContainer.style.display = "flex";
+      imgCaption.textContent = file.name;
 
       setTimeout(() => {
         imgContainer.style.opacity = "1";
@@ -81,6 +83,7 @@ const generateDownloadLink = (compressedFile) => {
 
   downloadLink.download = `compressed-${compressedFile.name}`;
   downloadLink.textContent = "Download Compressed Image";
+  downloadLink.setAttribute("class", "app__download-button");
 
   appOuputContainer.appendChild(downloadLink);
 };
