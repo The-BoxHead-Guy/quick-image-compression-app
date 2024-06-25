@@ -4,10 +4,27 @@ const input = document.getElementById("file-input");
 const submitButton = document.querySelector(".app__button");
 const appOuputContainer = document.getElementById("app-output");
 
+/* Image Handlers */
+const imgContainer = document.querySelector(".app__img-container");
+const imgPreview = document.querySelector(".app__img-preview");
+
 addEventListener("DOMContentLoaded", () => {
   input.addEventListener("change", (event) => {
     /* Get Image file from input */
     const file = event.target.files[0];
+
+    /* Display Image Preview after input change */
+    if (file) {
+      const imgFile = URL.createObjectURL(file);
+
+      imgPreview.src = imgFile;
+
+      imgContainer.style.display = "flex";
+
+      setTimeout(() => {
+        imgContainer.style.opacity = "1";
+      }, 500);
+    }
 
     /* Compress Image File */
 

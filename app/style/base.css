@@ -5,3 +5,24 @@ html {
 h1 {
   font-family: var(--font-noto-sans);
 }
+
+body {
+  background: linear-gradient(
+    190deg,
+    var(--bg-color),
+    var(--bg-color-2),
+    var(--bg-color-3)
+  );
+
+  width: 90vw;
+  height: max(100vh, 62rem);
+  margin: auto;
+
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.5s ease-in-out;
+}

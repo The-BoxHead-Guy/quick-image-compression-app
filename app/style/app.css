@@ -29,21 +29,93 @@
   --font-nunito-sans: "Nunito Sans", sans-serif;
 }
 
-/* Base Config */
-
 .app {
-  background: linear-gradient(
-    190deg,
-    var(--bg-color),
-    var(--bg-color-2),
-    var(--bg-color-3)
-  );
-
-  width: 100vw;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100%;
 
   position: relative;
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.app__img-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: min(100%, 26rem);
+  margin-block: 2.5rem;
+  margin-inline: 1rem;
+  border-radius: 1rem;
+
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+
+  & .app__img-preview {
+    width: min(100%, 32rem);
+    margin: 1rem;
+    border-radius: 1rem;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+  }
+
+  & .app__img-title {
+    color: var(--yellow);
+    font-size: 1.5rem;
+  }
+}
+
+.app__output {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  color: var(--white);
+  font-size: calc(1.5rem + 0.3vw);
+}
+
+.app__input[type="file"] {
+  display: none;
+  cursor: pointer;
+}
+
+.app__button,
+.app__input-button {
+  border: none;
+  background-color: var(--gray-dark);
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  cursor: pointer;
+  font-size: calc(1.15rem + 0.5vw);
+  font-family: var(--font-noto-sans);
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+    transform: scale(0.95);
+  }
 }
