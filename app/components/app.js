@@ -1,4 +1,4 @@
-import imageCompression from "/node_modules/browser-image-compression/dist/browser-image-compression.mjs";
+import imageCompression from "browser-image-compression";
 
 const input = document.getElementById("file-input");
 const submitButton = document.querySelector(".app__button");
