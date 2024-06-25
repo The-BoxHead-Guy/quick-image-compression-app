@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="/index.894387e5.css">
+
+  <!-- Scripts -->
+  <script src="/index.2a9fcaba.js" defer=""></script>
+
+  <!-- Logo -->
+  <link rel="icon" href="/image-compression-logo.06e9dce8.svg" type="image/x-icon">
+
+  <title>Image Compressor</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="app__title">Image Compressor</h1>
+
+    <p class="app__description">An app that takes an image and compress to reduce its size without losing so much
+      quality</p>
+  </header>
+
+  <main id="app" class="app">
+
+    <!-- app -->
+    <div class="app__content">
+
+      <!-- Image Preview -->
+      <picture class="app__img-container">
+        <h3 class="app__img-title">Image Preview</h3>
+        <img class="app__img-preview" alt="Image Preview">
+        <figcaption class="app__img-name"></figcaption>
+      </picture>
+    </div>
+
+    <!-- output -->
+    <div id="app-output" class="app__output">
+      <!-- form -->
+      <form class="app__form">
+        <label for="file-input">
+          <p class="app__input-button">Upload Image</p>
+          <input id="file-input" class="app__input" type="file" accept="image/*" required="">
+        </label>
+        <button class="app__button">Compress</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

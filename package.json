@@ -4,13 +4,18 @@
   "description": "An app that takes an image and compress to reduce its size without losing so much quality",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --open --lazy --port 5500",
+    "dev": "parcel --open --lazy --port 5500 --https",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "the-box-head-guy",
   "license": "MIT License",
   "dependencies": {
-    "browser-image-compression": "^2.0.2",
-    "normalize.css": "8.0.1"
+    "browser-image-compression": "^2.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }
